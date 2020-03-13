@@ -1,0 +1,18 @@
+@import "variables";
+
+
+// Bootstrap 
+// @import '~/bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+// Costume variables 
+@import "mixins";
+
+// Font Plugin & awesome 
+@import "fonts";
+
+// Plugin style 
+@import "base";
+@import 'dialog';
+@import 'slick'; 
+@import 'slick-theme'; 

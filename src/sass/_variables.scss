@@ -1,0 +1,17 @@
+// My vars
+// --------------------------
+
+$main_text_color      : #444444;
+$text_color           : #000000 !default;
+
+$main_color           : #007bff !default;
+$second_main_color    : #096886 !default;
+
+$lighter_color        : lighten($main_text_color,40%);
+$light_color          : lighten($main_text_color,15%);
+$dark_color           : darken($main_text_color,15%);
+$darker_color         : darken($main_text_color,40%);
+ 
+$btn-custom-color     : $second_main_color;
+$btn-custom-bg        : $main_color  ;
+$btn-custom-border    : $second_main_color;  

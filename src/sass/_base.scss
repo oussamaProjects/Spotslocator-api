@@ -1,0 +1,238 @@
+/* =WordPress Core
+-------------------------------------------------------------- */
+
+ul {
+	text-align: initial;
+}
+
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%;
+	/* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+// My style
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: $font-weight-base;
+	line-height: $line-height-base;
+	color: $body-color;
+	background-color: $body-bg;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+
+	@include media-breakpoint-up("<md") {
+		font-size: $font-size-lg;
+		line-height: $line-height-lg;
+
+	}
+
+	@include media-breakpoint-up("<sm") {
+		font-size: $font-size-sm;
+		line-height: $line-height-sm;
+	}
+
+
+	p {
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+
+	img {
+		max-width: 100%;
+		height: initial;
+	}
+
+	&.single-events .menu-item-103>a {
+		color: $second_main_color;
+	}
+
+}
+
+:focus {
+	outline: none;
+}
+
+a {
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+
+blockquote {
+
+	overflow: hidden;
+	margin: rem(40px) auto;
+	padding: rem(0px) rem(20px);
+	margin-left: rem(-24px);
+	border-left: rem(5px) solid $main_color;
+	font-size: rem(30px);
+	font-style: italic;
+	line-height: rem(46px);
+	color: $main_color;
+	position: relative;
+	min-height: rem(140px);
+	display: flex;
+	align-items: center;
+
+	p {
+		color: $main_color;
+		position: absolute;
+		margin: 0;
+		left: -100%;
+		max-width: 870px;
+		@include transition();
+	}
+
+	&.show p {
+		left: 2%;
+	}
+
+	&.hide p {
+		left: -100%;
+	}
+
+	@include media-breakpoint-up("<md") {
+		margin: rem(30px) auto;
+		padding: rem(0px) rem(15px);
+		margin-left: 0px;
+		border-left: rem(3px) solid $main_color;
+		font-size: rem(20px);
+		line-height: rem(32px);
+		min-height: auto;
+		height: auto;
+
+		p {
+			position: relative;
+			margin: 0;
+			left: 0;
+		}
+
+		&.show p {
+			left: 0;
+		}
+
+		&.hide p {
+			left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 440px) {
+
+	.logo_url {
+
+		display: block;
+		margin: rem(16px) auto;
+
+	}
+}
