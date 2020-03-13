@@ -1,5 +1,5 @@
 {
-  "name": "spotslocator",
+  "name": "Spotslocator API",
   "version": "1.0.0",
   "description": "Wordpress plugin allow to search/find locations in the map",
   "main": "webpack.config.js",
@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oussamaProjects/Spotslocator.git"
+    "url": "git+https://github.com/oussamaProjects/Spotslocator-api.git"
   },
   "author": "Oussama Elmaaroufy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/oussamaProjects/Spotslocator/issues"
+    "url": "https://github.com/oussamaProjects/Spotslocator-api/issues"
   },
-  "homepage": "https://github.com/oussamaProjects/Spotslocator#readme"
+  "homepage": "https://github.com/oussamaProjects/Spotslocator-api#readme"
 }
